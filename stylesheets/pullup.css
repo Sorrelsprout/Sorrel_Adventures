@@ -90,9 +90,7 @@
     text-align: center;
 }
 
-#pullup .hero p {
-    font-size: 1em;
-}
+#pullup .hero p { font-size: 1em; }
 
 /* Pullup Description ------------------------------------------------------*/
 
@@ -102,13 +100,9 @@
     width: 100%;
 }
 
-#pullup #pullupContent {
-    display: none;
-}
+#pullup #pullupContent { display: none; }
 
-#pullup #pullupContent.show {
-    display: flex;
-}
+#pullup #pullupContent.show { display: flex; }
 
 /* About -------------------------------------------------------------------*/
 
