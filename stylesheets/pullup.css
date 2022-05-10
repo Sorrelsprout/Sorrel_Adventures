@@ -115,8 +115,8 @@
     height: 8rem;
     margin-bottom: 0;
     object-fit: cover;
-    outline: solid 0.5rem var(--BGColor);
-    outline-offset: -2px;
+    box-shadow: 0 0 0 0.4rem var(--BGColor);
+    background: var(--BGColor);
     border-radius: 100% !important;
     z-index: 1;
 }
