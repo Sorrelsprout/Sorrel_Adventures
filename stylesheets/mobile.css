@@ -20,7 +20,7 @@
     width: 14rem;
     height: 100vh;
     padding: 5rem 2.2rem;
-    background: #232323;
+    background: var(--BGColor);
     box-shadow: 0 0 1rem #0003;
 }
 
