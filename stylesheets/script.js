@@ -76,6 +76,19 @@ $(document).ready(function(){
         setPullup(); /* Project Content Setup */
     });
 
+    $("#cardwelling").click(function() {
+        $("#pullupContent .fullDescription").load("pages/cardwelling.html"); 
+        $("#pullupContent .hero").css({ 
+            "background":"url(images/about/banner-cardwelling.jpg)", 
+            "background-position":"50% 50%",
+            "background-size":"cover",
+            "background-repeat":"no-repeat" 
+        });
+        $("#pullupContent .hero h1").html("Car Dwelling"); /* Project Name Setup */
+        $("#pullupContent .hero p").html("");
+        setPullup(); /* Project Content Setup */
+    });
+
     function setPullup() {
         $("#pullupContent").addClass("show");
         $("#pullup").addClass("show"); 
