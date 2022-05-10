@@ -7,8 +7,10 @@
   --BGColor: #eeece8;
   --TextColor: #222;
   --LinkColor: #555;
+  --LinkHoverColor: #888;
   --ProjectContainerBG: #222;
   --BorderColor: #2223;
+  --SelectionBG: #55423222;
 }
 
 html {
@@ -159,12 +161,11 @@ a {
 }
 
 a:hover {
-  color: var(--TextColor);
+  color: var(--LinkHoverColor);
 }
 
 ::selection {
-  color: var(--LinkColor);
-  background: var(--TextColor);
+  background: var(--SelectionBG);
 }
 
 /* Images -------------------------------------------------------------------*/

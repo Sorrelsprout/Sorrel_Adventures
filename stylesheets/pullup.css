@@ -179,6 +179,9 @@
     margin-left: 1.2rem;
 }
 
+#pullup a {
+    font-weight: 600;
+}
 
 /* Pullup Image + Gallery ----------------------------------------------------*/
 
