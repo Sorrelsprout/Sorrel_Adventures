@@ -1,10 +1,10 @@
 @import "./reset.css";
 @import "./mobile.css";
 @import "./pullup.css";
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 
 :root {
-  --BGColor: #eeece8;
+  --BGColor: #eceae8;
   --TextColor: #222;
   --LinkColor: #555;
   --LinkHoverColor: #888;
@@ -164,6 +164,10 @@ a:hover {
   color: var(--LinkHoverColor);
 }
 
+em {
+  font-style: italic;
+}
+
 ::selection {
   background: var(--SelectionBG);
 }
@@ -211,16 +215,12 @@ body {
   }
 }
 
-
 @media (max-width: 600px){
   .projectContainer img { opacity: 0.5; }
   .projectContainer .projectDescription { opacity: 1; }
   .projectContainer:hover img { opacity: 1; }  
   .projectContainer:hover .projectDescription { opacity: 0; }
 }
-
-
-
 
 
 /* Boba ----------------------------------------------------------------------*/
