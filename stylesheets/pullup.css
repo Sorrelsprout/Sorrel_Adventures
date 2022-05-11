@@ -154,23 +154,25 @@
 
 #pullup h2 {
     border-top: 1px solid var(--BorderColor);
-    padding-top: 4rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
     font-size: 1.35em;
 }
 
 #pullup h2:first-of-type {
     border-top: none;
+    margin-top: 0;
     padding-top: 2rem;
 }
 
 #pullup h3 {
     font-size: 1em;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 #pullup p, #pullup ul {
     line-height: 1.68em;
-    margin-bottom: 1.68em;
+    margin-bottom: 1em;
 }
 
 
