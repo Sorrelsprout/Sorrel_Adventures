@@ -22,7 +22,7 @@ $(document).ready(function(){
         $(".mobileMenu").removeClass("expanded");;
     });
 
-    $("#currentYear").html(new Date().getFullYear());
+    $(".currentYear").html(new Date().getFullYear());
 
 
     // Hero Fix ----------------------------------------------------------------------
