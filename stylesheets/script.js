@@ -9,6 +9,12 @@ $(document).ready(function(){
             $("body").removeClass("mobile");
             $(".mobileMenu").css({ "transition": "none" })
         }
+
+        if ($(window).width() < 768) {
+            $("#travelLogTitle").attr("src", "./images/about/travellog-mobile.png");
+        } else {
+            $("#travelLogTitle").attr("src", "./images/about/travellog.png");
+        }
     }
 
     $(".triplebar").click(function() {

@@ -76,6 +76,19 @@ nav .socials {
   cursor: pointer;
 }
 
+#travelLogTitle {
+  position: relative;
+  display: block;
+  width: 50%;
+  top: 6rem;
+  margin: 2rem auto 4rem auto;
+  filter: brightness(0.65) sepia(15%);
+}
+
+@media (max-width: 767px){
+  #travelLogTitle { margin: 2rem auto 3rem auto; }
+}
+
 /* Project Grid ---------------------------------------------------------------*/
 
 #projectgrid {
