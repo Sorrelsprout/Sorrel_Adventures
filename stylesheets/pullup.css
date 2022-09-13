@@ -217,8 +217,8 @@
 }
 
 /* Gallery Grid */
-#pullup .gallery.col2 > img { max-width: 50%; object-fit: cover; }
-#pullup .gallery.col3 > img { max-width: 33.3%; object-fit: cover; }
+#pullup .gallery.col2 > img, #pullup .gallery.col2 > figure { max-width: 50%; object-fit: cover; }
+#pullup .gallery.col3 > img, #pullup .gallery.col3 > figure { max-width: 33.3%; object-fit: cover; }
 
 
 /* Queries -------------------------------------------------------------------*/
