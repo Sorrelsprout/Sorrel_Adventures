@@ -112,9 +112,6 @@ nav .socials {
 .projectContainer img {
   width: 100%;
   height: 100%;
-}
-
-.projectContainer img {
   object-fit: cover;
 }
 
@@ -137,6 +134,7 @@ nav .socials {
   opacity: 0;
   line-height: 2em;
   text-align: center;
+  cursor: pointer;
 }
 
 .projectContainer:hover .projectDescription {
