@@ -57,7 +57,7 @@ $(document).ready(function(){
 
         /* Project Name Setup */
         const PNAME = "#"+(PROJECTID)+" p:first-of-type";
-        const PROJECTNAME = $(PNAME).text();
+        const PROJECTNAME = $(PNAME).html();
         $("#pullupContent .hero h1").html(PROJECTNAME);
         const PSUB = "#"+(PROJECTID)+" p:nth-child(2)";
         const PSUBNAME = $(PSUB).text();
