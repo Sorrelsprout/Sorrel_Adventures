@@ -36,7 +36,7 @@ nav, .footer {
   display: flex;
   flex-direction: row;
   height: 6rem;
-  max-width: 1196px;
+  max-width: 1200px;
   width: 100%;
   padding: 2rem 0;
   justify-content: space-between;
@@ -92,17 +92,16 @@ nav .socials {
 /* Project Grid ---------------------------------------------------------------*/
 
 #projectgrid {
-  display: flex;
-  flex-flow: row wrap;
   max-width: 1200px;
   margin: auto;
-  margin-top: 6rem;
-  padding: 0.1%;
-  justify-content: space-around;
+  margin: 6rem 2px 0 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
 }
 
 .projectContainer {
-  width: 49.8%;
+  width: 100%;
   height: 26rem;
   margin: 0.1%;
   background: var(--ProjectContainerBG);
@@ -212,15 +211,15 @@ body {
   nav > span:last-child { margin-right: -0.5rem; }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1201px){
   nav, footer.footer { padding: 0 2rem; }
+  #projectgrid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 960px){
   #projectgrid {
     flex-flow: column wrap;
   }
-  .projectContainer { width: 100%; }
   .footer {
     border-top: none;
     margin-top: 0;
@@ -228,6 +227,7 @@ body {
 }
 
 @media (max-width: 600px){
+  #projectgrid { grid-template-columns: 1fr; }
   .projectContainer img { opacity: 0.5; }
   .projectContainer .projectDescription { opacity: 1; }
   .projectContainer:hover img { opacity: 1; }  
