@@ -44,6 +44,7 @@ $(document).ready(function(){
         /* Get Project ID */
         const PROJECTINDEX = $(this).index();
         const PROJECTID = $(".projectContainer:nth-child("+(PROJECTINDEX+1)+")").attr("id");
+        const PYEAR = PROJECTID.substring(0, PROJECTID.indexOf("-"));
 
         /* Project Hero Image Setup */
         const PROJECTIMGURL = $("#"+(PROJECTID)+" img").attr("src")
@@ -64,8 +65,11 @@ $(document).ready(function(){
         $("#pullupContent .hero p").html(PSUBNAME);
 
         /* Project Content Setup */
-        const PROJECTDESC = "pages/" + (PROJECTID) + ".html"
+        const PROJECTDESC = "pages/" + (PYEAR) + "/" + (PROJECTID) + ".html"
         $("#pullupContent .fullDescription").load(PROJECTDESC); 
+
+        console.log(PROJECTDESC)
+
         setPullup();
     });
 
