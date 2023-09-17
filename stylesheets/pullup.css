@@ -194,7 +194,7 @@
     max-width: 100%; 
 }
 
-#pullup .gallery + .gallery { margin-top: -2.5rem; }
+#pullup .gallery + .gallery { margin-top: -2rem; }
 
 #pullup img {
     display: block;
