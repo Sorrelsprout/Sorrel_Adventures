@@ -109,6 +109,6 @@ $(document).ready(function(){
     $("#travel").click(function() { hidePullup() });
     $("#logo").click(function() { hidePullup() });
     function hidePullup(){
-        $("#pullup").removeClass("show");
+        $("#pullup").removeClass("show").scrollTop(0);
     }
 })
