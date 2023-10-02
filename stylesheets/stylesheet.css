@@ -94,7 +94,7 @@ nav .socials {
 #projectgrid {
   max-width: 1200px;
   margin: auto;
-  margin: 6rem 0.3% 0 0.1%;
+  margin: 6rem 3px 0 1px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1px 2px;
