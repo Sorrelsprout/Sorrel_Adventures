@@ -103,7 +103,7 @@ nav .socials {
 .projectContainer {
   width: 100%;
   height: 26rem;
-  margin: 0.1%;
+  margin: 1px;
   background: var(--ProjectContainerBG);
   position: relative;
 }
