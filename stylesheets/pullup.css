@@ -191,7 +191,7 @@
 
 #pullup .gallery { 
     display: flex; 
-    max-width: 100%; 
+    max-width: 100%;
 }
 
 #pullup .gallery + .gallery { margin-top: -2rem; }
@@ -202,6 +202,8 @@
     width: 100%;
     margin-bottom: 2.5rem;
     padding: 2px;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 
 #pullup figure {
