@@ -11,6 +11,8 @@
   --ProjectContainerBG: #222;
   --BorderColor: #2223;
   --SelectionBG: #55423222;
+  --navHeight: 6rem;
+  --navWidth: 1200px;
 }
 
 html {
@@ -35,8 +37,8 @@ body {
 nav, .footer {
   display: flex;
   flex-direction: row;
-  height: 6rem;
-  max-width: 1200px;
+  height: var(--navHeight);
+  max-width: var(--navWidth);
   width: 100%;
   padding: 2rem 0;
   justify-content: space-between;
@@ -66,8 +68,8 @@ nav > span:last-child {
   justify-content: flex-end;
 }
 
-nav .socials {
-  text-align: right;
+nav > span:last-child a:last-child {
+  margin: 0.5rem 0;
 }
 
 .triplebar {
@@ -208,7 +210,6 @@ body {
 
 @media (min-width: 1200px){
   nav > span:first-child { margin-left: -0.5rem; }
-  nav > span:last-child { margin-right: -0.5rem; }
 }
 
 @media (max-width: 1201px){
