@@ -33,7 +33,7 @@
 }
 
 .mobile .mobileMenu:last-child {
-    top: 10rem;
+    top: 7.5rem;
     background: none;
     padding: 0 2.2rem;
     justify-content: flex-start;

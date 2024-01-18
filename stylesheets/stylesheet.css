@@ -53,7 +53,7 @@ nav {
 
 nav a {
  text-transform: uppercase;
- margin: 0.5rem 0.5rem 0.5rem 0;
+ margin: 0.5rem 1rem 0.5rem 0;
  letter-spacing: 1.1px;
 }
 
@@ -208,11 +208,11 @@ body {
 
 /* Queries -------------------------------------------------------------------*/
 
-@media (min-width: 1200px){
+@media (min-width: 1260px){
   nav > span:first-child { margin-left: -0.5rem; }
 }
 
-@media (max-width: 1201px){
+@media (max-width: 1261px){
   nav, footer.footer { padding: 0 2rem; }
   #projectgrid { grid-template-columns: 1fr 1fr; }
 }
