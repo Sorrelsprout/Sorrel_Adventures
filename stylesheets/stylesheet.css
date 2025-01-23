@@ -149,6 +149,7 @@ nav > span:last-child a:last-child {
   font-size: 1.25em;
   font-weight: 700;
   letter-spacing: 1.1px;
+  line-height: 1.5rem;
   text-transform: uppercase;
   padding: 0 0.5rem;
 }
