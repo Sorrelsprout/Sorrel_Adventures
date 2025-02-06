@@ -143,6 +143,8 @@
     margin: 0;
 }
 
+#pullup .footer .btt { border-bottom: none; }
+
 /* Pullup Typography -------------------------------------------------------*/
 
 #pullup h1, #pullup h2, #pullup h3, #pullup h4, #pullup h5, #pullup h6 {
