@@ -199,6 +199,8 @@
 
 #pullup b { font-weight: 600; }
 
+#pullup i { font-style: italic; }
+
 /* Pullup Image + Gallery ----------------------------------------------------*/
 
 #pullup .gallery { 
