@@ -147,7 +147,7 @@
 
 /* Pullup Typography -------------------------------------------------------*/
 
-#pullup h1, #pullup h2, #pullup h3, #pullup h4, #pullup h5, #pullup h6 {
+#pullup h1, #pullup h2, #pullup h3, #pullup h4, #pullup h5, #pullup h6, #pullup .notableFloraFunga::before {
     line-height: 1.2em;
     font-weight: 700;
     letter-spacing: 1.1px;
@@ -155,7 +155,7 @@
     margin-bottom: 2rem;
 }
 
-#pullup h2 {
+#pullup h2, #pullup .notableFloraFunga::before {
     border-top: 1px solid var(--BorderColor);
     margin-top: 3rem;
     padding-top: 3rem;
@@ -237,6 +237,48 @@
 /* Gallery Grid */
 #pullup .gallery.col2 > img, #pullup .gallery.col2 > figure { max-width: 50%; object-fit: cover; }
 #pullup .gallery.col3 > img, #pullup .gallery.col3 > figure { max-width: 33.3%; object-fit: cover; }
+
+/* Notable Flora + Funga -----------------------------------------------------*/
+
+#pullup .notableFloraFunga { padding-bottom: 1.25rem; }
+#pullup .notableFloraFunga::before {
+    content: "Notable Flora & Funga";
+    display: block;
+}
+#pullup .notableFloraFunga > div {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f6f5f3;
+    border-radius: 0.25rem;
+}
+#pullup .notableFloraFunga > div > * {
+    font-size: 0.85rem;
+    min-width: 8rem;
+}
+#pullup .notableFloraFunga > div > *:not(:first-child) {
+    margin-top: 1rem;
+}
+#pullup .notableFloraFunga > div h3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+#pullup .notableFloraFunga > div h3 a {
+    border-bottom: none;
+}
+#pullup .notableFloraFunga > div h3 img {
+    max-width: 16rem;
+    margin-bottom: unset;
+}
+#pullup .notableFloraFunga > div .names {
+    white-space: nowrap;
+    padding-right: 1rem;
+    border-right: 1px solid var(--BorderColor);
+}
+#pullup .notableFloraFunga > div .scientific { font-style: italic; }
 
 
 /* Queries -------------------------------------------------------------------*/
