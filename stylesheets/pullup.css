@@ -280,6 +280,11 @@
 }
 #pullup .notableFloraFunga > div .scientific { font-style: italic; }
 
+@media (max-width: 600px){
+    #pullup .notableFloraFunga > div { flex-wrap: wrap; }
+    #pullup .notableFloraFunga > div .names { border-right: unset; margin-top: 0; margin-bottom: 0; }
+    #pullup .notableFloraFunga > div .about { flex: 1 100%; margin-top: 0;}
+}
 
 /* Queries -------------------------------------------------------------------*/
 
