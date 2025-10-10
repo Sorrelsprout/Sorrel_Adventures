@@ -240,7 +240,12 @@
 
 /* Notable Flora + Funga -----------------------------------------------------*/
 
-#pullup .notableFloraFunga { padding-bottom: 1.25rem; }
+#pullup .notableFloraFunga { 
+    padding-bottom: 1.25rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
 #pullup .notableFloraFunga::before {
     content: "Notable Flora & Funga";
     display: block;
@@ -270,8 +275,10 @@
     border-bottom: none;
 }
 #pullup .notableFloraFunga > div h3 img {
-    max-width: 16rem;
+    width: 16rem;
     margin-bottom: unset;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 #pullup .notableFloraFunga > div .names {
     white-space: nowrap;
