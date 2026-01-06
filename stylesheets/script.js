@@ -102,13 +102,34 @@ $(document).ready(function(){
 
     function setPullup() {
         $("#pullupContent").addClass("show");
+        
+        $("#pullup").addClass("setScroll");
+        $("#pullup").scrollTop(0);
+        $("#pullup").removeClass("setScroll");
+
         $("#pullup").addClass("show"); 
     }
 
-    $("#pullupToggle").click(function() { hidePullup() });
-    $("#travel").click(function() { hidePullup() });
-    $("#logo").click(function() { hidePullup() });
-    function hidePullup(){
-        $("#pullup").removeClass("show").scrollTop(0);
+    $("#pullupToggle").click(function() { hidePullup(); });
+    $("#travel").click(function() { hidePullup(); });
+    $("#logo").click(function() { hidePullup(); });
+    function hidePullup(){ $("#pullup").removeClass("show").scrollTop(0); }
+
+    
+    // Image Zooming -----------------------------------------------------------------
+
+    document.body.addEventListener('click', handleClick);
+    function handleClick(event) {
+        let clickedElement = event.target;
+        // Check if the clicked element's tag name is 'IMG' (case-insensitive)
+        if (clickedElement.tagName === 'IMG') { clickedElement.classList.toggle("fullScreenImg");
+        } else { removeClassFromAll('fullScreenImg'); }
+    }
+
+    function removeClassFromAll(classNameToRemove) {
+        // Select all elements that currently have the specified class name
+        let elements = document.querySelectorAll(`.${classNameToRemove}`);
+        // Iterate over the collection of elements and remove the class from each
+        elements.forEach(element => { element.classList.remove(classNameToRemove); });
     }
 })
