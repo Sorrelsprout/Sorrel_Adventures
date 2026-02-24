@@ -224,7 +224,8 @@
     cursor: zoom-out;
 }
 
-#pullup img.fullScreenImg {
+#pullup img.fullScreenImg,
+#pullup .notableFloraFunga > div h3 img.fullScreenImg {
     position: fixed;
     top: var(--navHeight);
     left: 0;
